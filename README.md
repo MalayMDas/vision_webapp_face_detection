@@ -6,3 +6,4 @@ To run this webapp
 3. Navigate to the root folder of the repository
 4. run 'python app.py'
 
+![image info](./vision_webapp_result.png)

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processed Results</title>
+</head>
+<body>
+    <h1>Processed Image</h1>
+    <!-- Display the annotated image -->
+    <img src="{{ annotated_image }}" alt="Annotated Image" style="max-width: 100%; height: auto;">
+
+    <h2>Detected Faces</h2>
+    <!-- Display the cropped faces in a grid -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 10px;">
+        {% for face_path in face_paths %}
+            <img src="{{ face_path }}" alt="Face" style="width: 100px; height: auto;">
+        {% endfor %}
+    </div>
+
+    <!-- Button to delete all files and return to the upload page -->
+    <form action="/delete_from_results" method="post" style="margin-top: 20px;">
+        <button type="submit" style="padding: 10px 20px; font-size: 16px;">Delete And Analyze Another</button>
+    </form>
+
+</body>
+</html>
+

@@ -1,4 +1,4 @@
-# vision_webapp_face_detection
+# Vision webapp to detect faces in an image
 ## Vision webapp to detect and extract face
 To run this webapp
 1. Clone the reository.

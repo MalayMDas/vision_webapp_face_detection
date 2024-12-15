@@ -8,7 +8,9 @@ To run this webapp
 5. Open http://127.0.0.1:5000/ in your browser
 
 The page should look like
+
 ![image info](./vision_webapp_initial.png)
 
 An example sucessful execution
+
 ![image info](./vision_webapp_result.png)
